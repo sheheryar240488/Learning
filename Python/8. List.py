@@ -60,3 +60,58 @@ thislist = ["apple", "banana", "cherry"]
 tropical = ["mango", "pineapple", "papaya"]
 thislist.extend(tropical)
 print(thislist)
+
+# The remove() method removes the specified item.
+thislist = ["apple","banana","orange"]
+thislist.remove(thislist[1])
+print(thislist)
+
+# you can also just add str you want to remove from the list
+thislist = ["apple","banana","orange"]
+thislist.remove("apple")
+print(thislist)
+
+#Remove a spicific index with pop().
+thislist =["Ali","Bilal","Omar"]
+thislist.pop(1)
+print(thislist)
+
+#If you do not specify the index, the pop() method removes the last item.
+thislist =["Ali","Bilal","Omar"]
+thislist.pop()
+print(thislist)
+
+#Remove the first item:
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+
+#del can delete list completly
+thislist =["1",["shah","abc"]]
+del thislist #dont print you will get an error. because the list is deleted.
+
+#clear the list
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
+
+#You can loop through the list items by using a for loop:
+
+#Print all items in the list, one by one:
+thislist = ["first","second","thrid"]
+for x in thislist:
+    print(x)
+
+#Loop through the letters in the word "banana":
+for x in "banana":
+  print(x)
+
+#With the break statement we can stop the loop before it has looped through all the items:
+fruits = ["apple","banana","orange","mango"]
+for x in fruits:
+    print(x)
+    if x == "orange":
+        break
+
+
+
