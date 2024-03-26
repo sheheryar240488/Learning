@@ -41,18 +41,34 @@ Tuple is a collection which is ordered and unchangeable. Allows duplicate member
 Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
 Dictionary is a collection which is ordered** and changeable. No duplicate members."""
 
-thislist = ["apple", "banana", "cherry"]
-thislist[1:2] = ["blackcurrant", "watermelon"]
-print(thislist)
 
-#The insert() method inserts an item at the specified index:
-thislist = ["apple", "banana", "cherry"]
-thislist.insert(1, "watermelon")
-print(thislist)
+#Access the value in the list
+print("#Access the value in the list ")
+
+accessList = ["a","b","c","d","e","f"]
+print(accessList[1])
+
+#Slicing - Getting the required value for the list
+print("#Slicing - Getting the required value for the list ")
+print(accessList[2:5])
+print(accessList[:5])
+print(accessList[2:])
+
+#Update the value in list
+print("#Update the value in list")
+accessList[2]="Hello"
+print(accessList)
 
 #Using the append() method to append an item:
 thislist = ["apple", "banana", "cherry"]
 thislist.append("orange")
+print(thislist)
+
+#The insert() method inserts an item at the specified index:
+print("insert value")
+
+thislist = ["apple", "banana", "cherry"]
+thislist.insert(1, "BOOM")
 print(thislist)
 
 #Add the elements of tropical to thislist:
@@ -61,17 +77,44 @@ tropical = ["mango", "pineapple", "papaya"]
 thislist.extend(tropical)
 print(thislist)
 
+#ADD two lists.
+print("ADD two lists")
+
+one = [1,3,4]
+two = [2,5,6]
+addList = one + two
+print(addList)
+
+
+# CHANGE
+print("#Change the value in the list ")
+thislist = ["apple", "banana", "cherry"]
+thislist[1:2] = ["blackcurrant", "watermelon"]
+print(thislist)
+
+#How to find the value in the list
+print("Find the value in the list")
+
+thislist = ["apple", "banana", "cherry"]
+print("apple" in thislist)
+#REMOVE VALUE
+
 # The remove() method removes the specified item.
+print("REMOVE specified item")
+
 thislist = ["apple","banana","orange"]
 thislist.remove(thislist[1])
 print(thislist)
 
 # you can also just add str you want to remove from the list
+print("Remove from the list")
+
 thislist = ["apple","banana","orange"]
 thislist.remove("apple")
 print(thislist)
 
 #Remove a spicific index with pop().
+
 thislist =["Ali","Bilal","Omar"]
 thislist.pop(1)
 print(thislist)
@@ -97,7 +140,9 @@ print(thislist)
 
 #You can loop through the list items by using a for loop:
 
-#Print all items in the list, one by one:
+#Iterate the  list value : Print all items in the list, one by one:
+print("Iterate: Print one by one")
+
 thislist = ["first","second","thrid"]
 for x in thislist:
     print(x)
@@ -112,6 +157,5 @@ for x in fruits:
     print(x)
     if x == "orange":
         break
-
 
 
