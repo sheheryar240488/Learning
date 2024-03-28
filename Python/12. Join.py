@@ -33,3 +33,19 @@ youlist = ["2","4","6"]
 mylist.extend(youlist)
 print("extend")
 print(mylist)
+
+#-------------------Tuples--------------------#
+print("#-------------------Tuples--------------------#")
+
+
+thistuple = (1,2,3,4,5)
+thattuple = (6,6,7,7,8)
+
+x = thistuple+thattuple
+print(x)
+
+#Multiply Tuples
+# If you want to multiply the content of a tuple a given number of times, you can use the * operator:
+
+x = thistuple*5
+print(x)
