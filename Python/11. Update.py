@@ -49,12 +49,22 @@ del thistuple
 #print(thistuple) --- this will raise an error because the tuple no longer exists
 
 
+print("--------------------------SETS------------------------")
+"""
+Update
+The update() method inserts all items from one set into another.
 
+The update() changes the original set, and does not return a new set.
+"""
 
+#The update() method inserts the items in set2 into set1:
 
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
 
+set1.update(set2)
+print(set1)
 
-
-
+#Note: Both union() and update() will exclude any duplicate items.
 
 

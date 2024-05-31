@@ -34,7 +34,7 @@ mylist.extend(youlist)
 print("extend")
 print(mylist)
 
-#-------------------Tuples--------------------#
+
 print("#-------------------Tuples--------------------#")
 
 
@@ -49,3 +49,55 @@ print(x)
 
 x = thistuple*5
 print(x)
+
+
+print("-----------------------SETS------------------------")
+
+thisset = {1,"ali",2,3}
+thatset = {6,7,99}
+
+print(thisset.union(thatset))
+
+"""Join Multiple Sets
+All the joining methods and operators can be used to join multiple sets.
+
+When using a method, just add more sets in the parentheses, separated by commas:
+
+"""
+
+#Join multiple sets with the union() method:
+
+set1 = {"a", "b", "c"}
+set2 = {1, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas"}
+
+myset = set1.union(set2, set3, set4)
+print(myset)
+
+# When using the | operator, separate the sets with more | operators:
+#Use | to join two sets:
+
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
+
+myset = set1 | set2 | set3 |set4
+print(myset)
+
+"""Join a SET and a Tuple
+
+The union() method allows you to join a set with other data types, like lists or tuples.
+The result will be a set.
+"""
+
+thistuple = [1,2,3]
+thisset = {66,77,88}
+
+print(thisset.union(thistuple))
+#Note: The  | operator only allows you to join sets with sets, and not with other data types like you can with the  union() method.
+
+#Note: Both union() and update() will exclude any duplicate items.
+
+

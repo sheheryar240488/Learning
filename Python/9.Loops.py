@@ -29,7 +29,6 @@ while y < (len(x)):
     print(x[y])
     y = y + 1
 
-#----------------------------Tuples____________________________________
 print("LOOP WITH ----------------------------Tuples____________________________________")
 
 """You can loop through the tuple items by using a for loop."""
@@ -63,3 +62,9 @@ while i < len(thistuple):
     print(thistuple[i])
     i += 1
 
+print("---------------------------------SETS-------------------------------")
+
+thisset = {"apple",1,2,3,3.4}
+
+for x in thisset:
+    print(x)

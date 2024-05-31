@@ -1,12 +1,29 @@
 """
-List
+LIST
+
 Lists are used to store multiple items in a single variable.
+Lists are one of 4 built-in data types in Python used to store collections of data.
+The other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
 
-Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+Lists are created using square brackets:N [ ]
+List items are indexed,
+the first item has index [0],
+the second item has index [1] etc.
 
-Lists are created using square brackets:
+Python Collections (Arrays)
+There are four collection data types in the Python programming language:
 
-List items are indexed, the first item has index [0], the second item has index [1] etc.
+DATA TYPE:
+LIST : ORDER - CHANGEABLE - DUPLICATION
+TUPLE: ORDER - UNCHANGEABLE - DUPLICATION
+SET  : UNORDER - UNCHANGEABLE - NO DUPLICATION
+DICTIONARY: ORDER - CHANGEABLE - NO DUPLICATION
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members
+
 """
 # example
 mylist = ["apple", "banana", "cherry"]
@@ -33,15 +50,6 @@ Whenever an object is created, the constructor is called automatically.
 thislist =list(("apple","orange","banana"))
 print(thislist)
 
-"""Python Collections (Arrays)
-There are four collection data types in the Python programming language:
-
-List is a collection which is ordered and changeable. Allows duplicate members.
-Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
-Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
-Dictionary is a collection which is ordered** and changeable. No duplicate members."""
-
-
 #Access the value in the list
 print("#Access the value in the list ")
 
@@ -50,7 +58,7 @@ print(accessList[1])
 
 #Slicing - Getting the required value for the list
 print("#Slicing - Getting the required value for the list ")
-print(accessList[2:5])
+print(accessList[2:5]) # index 2 will be included by not the index 5.
 print(accessList[:5])
 print(accessList[2:])
 
@@ -59,26 +67,32 @@ print("#Update the value in list")
 accessList[2]="Hello"
 print(accessList)
 
-#Using the append() method to append an item:
+#Using the append() method to append (enter a new iteam)an iteam:
+#iteam will always added to the end of the list.
+
+print("#Using the append()")
 thislist = ["apple", "banana", "cherry"]
+print(thislist)
 thislist.append("orange")
 print(thislist)
 
 #The insert() method inserts an item at the specified index:
-print("insert value")
+print("#insert value")
 
 thislist = ["apple", "banana", "cherry"]
+print(thislist)
 thislist.insert(1, "BOOM")
 print(thislist)
 
 #Add the elements of tropical to thislist:
+print("#Extend the list")
 thislist = ["apple", "banana", "cherry"]
 tropical = ["mango", "pineapple", "papaya"]
 thislist.extend(tropical)
 print(thislist)
 
 #ADD two lists.
-print("ADD two lists")
+print("#ADD two lists")
 
 one = [1,3,4]
 two = [2,5,6]
@@ -116,6 +130,7 @@ print(thislist)
 #Remove a spicific index with pop().
 
 thislist =["Ali","Bilal","Omar"]
+print(thislist)
 thislist.pop(1)
 print(thislist)
 
@@ -134,6 +149,7 @@ thislist =["1",["shah","abc"]]
 del thislist #dont print you will get an error. because the list is deleted.
 
 #clear the list
+print("#clear the list")
 thislist = ["apple", "banana", "cherry"]
 thislist.clear()
 print(thislist)
